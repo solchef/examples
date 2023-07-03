@@ -6,14 +6,35 @@ import { TriggerDotDevLightIcon, ResendIcon } from "@trigger.dev/companyicons";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center pt-20 sm:px-8 px-4">
-      <div className="flex gap-x-4 mb-4">
+      <div className="flex gap-x-4 mb-2">
         <TriggerDotDevLightIcon className="w-8 h-8" />
+        <p>+</p>
         <ResendIcon className="w-8 h-8" />
       </div>
-      <h1 className="font-bold text-2xl mb-8 text-center">
-        Send an email with Resend
+      <h1
+        className="font-bold text-xl mb-4 text-center sm:w-96 
+      p-4"
+      >
+        Test sending an email using Trigger.dev and Resend
       </h1>
+
       <SendEmailForm />
+      <p className="text-center mb-8 flex gap-x-4 text-slate-500 ">
+        <a
+          href="https://trigger.dev/docs/integrations/apis/resend"
+          target="_blank"
+          className="underline hover:text-slate-400 transition"
+        >
+          Trigger.dev docs
+        </a>
+        <a
+          href="https://resend.com/docs/introduction"
+          target="_blank"
+          className="underline hover:text-slate-400 transition"
+        >
+          Resend docs
+        </a>
+      </p>
     </main>
   );
 }

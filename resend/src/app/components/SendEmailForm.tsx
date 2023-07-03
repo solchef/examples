@@ -16,7 +16,10 @@ const SendEmailForm = () => {
     await sendEmail(to, subject, text, from);
   }
   return (
-    <form action={action} className="flex flex-col gap-y-4 sm:w-96">
+    <form
+      action={action}
+      className="flex flex-col gap-y-4 sm:w-96 pb-4 px-4 sm:px-0"
+    >
       <textarea
         rows={1}
         name="to"
@@ -44,7 +47,7 @@ const SendEmailForm = () => {
         ⚠️ Resend requires you to have set up the domain that you are sending
         any emails from.
       </p>
-      <button className="w-full rounded bg-indigo-500 hover:bg-indigo-600 h-10 font-bold mt-2">
+      <button className="w-full rounded transition bg-indigo-600 hover:bg-indigo-500 h-10 font-bold mt-2">
         Send test email
       </button>
     </form>
