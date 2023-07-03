@@ -1,13 +1,7 @@
-import { createAppRoute } from "@trigger.dev/nextjs";
+import { client } from "@/app/api/trigger/route";
 import { Resend } from "@trigger.dev/resend";
-import { Job, TriggerClient, eventTrigger } from "@trigger.dev/sdk";
+import { Job, eventTrigger } from "@trigger.dev/sdk";
 import { z } from "zod";
-
-export const client = new TriggerClient({
-  id: "resend",
-  apiKey: process.env.TRIGGER_API_KEY,
-  apiUrl: process.env.TRIGGER_API_URL,
-});
 
 const resend = new Resend({
   id: "resend",
@@ -24,8 +18,6 @@ new Job(client, {
       to: z.union([z.string(), z.array(z.string())]),
       subject: z.string(),
       text: z.string(),
-      // Resend requires you to have set up the domain that you're sending any emails from.
-      from: z.string(),
     }),
   }),
   integrations: {
@@ -36,9 +28,7 @@ new Job(client, {
       to: payload.to,
       subject: payload.subject,
       text: payload.text,
-      from: payload.from,
+      from: "Trigger.dev <hello@email.trigger.dev>",
     });
   },
 });
-
-export const { POST, dynamic } = createAppRoute(client);
