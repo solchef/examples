@@ -20,7 +20,7 @@ const SendEmailForm = () => {
       <textarea
         rows={1}
         name="to"
-        placeholder="Enter an email address"
+        placeholder="Enter a 'to' email address"
         className="text-black rounded p-1.5"
       />
       <textarea
@@ -30,7 +30,6 @@ const SendEmailForm = () => {
         className="text-black rounded p-1.5"
       />
       <textarea
-        rows={1}
         name="text"
         placeholder="Enter a message"
         className="text-black rounded p-1.5"
@@ -38,11 +37,14 @@ const SendEmailForm = () => {
       <textarea
         rows={1}
         name="from"
-        placeholder="Enter a from address"
+        placeholder="Enter a 'from' email address"
         className="text-black rounded p-1.5"
       />
-
-      <button className="w-full rounded bg-indigo-500 hover:bg-indigo-600 h-8 font-bold mt-2">
+      <p className="text-sm text-gray-500">
+        ⚠️ Resend requires you to have set up the domain that you are sending
+        any emails from.
+      </p>
+      <button className="w-full rounded bg-indigo-500 hover:bg-indigo-600 h-10 font-bold mt-2">
         Send test email
       </button>
     </form>

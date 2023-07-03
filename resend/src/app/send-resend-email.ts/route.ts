@@ -18,6 +18,8 @@ new Job(client, {
       to: z.union([z.string(), z.array(z.string())]),
       subject: z.string(),
       text: z.string(),
+      // Resend requires you to have set up the domain that you're sending any emails from.
+      from: z.string(),
     }),
   }),
   integrations: {
@@ -28,7 +30,7 @@ new Job(client, {
       to: payload.to,
       subject: payload.subject,
       text: payload.text,
-      from: "Trigger.dev <hello@email.trigger.dev>",
+      from: payload.from,
     });
   },
 });
