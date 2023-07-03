@@ -16,7 +16,7 @@ const SendEmailForm = () => {
     await sendEmail(to, subject, text, from);
   }
   return (
-    <form action={action} className="flex flex-col gap-y-4 w-96">
+    <form action={action} className="flex flex-col gap-y-4 sm:w-96">
       <textarea
         rows={1}
         name="to"
