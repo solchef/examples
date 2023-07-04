@@ -14,6 +14,7 @@ const resend = new Resend({
   apiKey: process.env.RESEND_API_KEY!,
 });
 
+//This job sends a basic email to a 'to' email address, with a 'subject', a 'text' field and a 'from' email address.
 new Job(client, {
   id: "send-resend-email",
   name: "Send Resend Email",
@@ -24,7 +25,7 @@ new Job(client, {
       to: z.union([z.string(), z.array(z.string())]),
       subject: z.string(),
       text: z.string(),
-      // Resend requires you to have set up the domain that you're sending any emails from.
+      // The 'from' email address must be a verified domain in your Resend account.
       from: z.string(),
     }),
   }),
