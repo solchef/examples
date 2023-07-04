@@ -56,4 +56,6 @@ Visit your Trigger.dev dashboard to view your Job. I will look something like th
 
 [comment]: <> (insert a screenshot using GitHub upload showing this Job in Jobs list page. If more than 1 Job is in the list, use Cleanshot Pro to highlight the Job)
 
+![example-resend-jobs-list](https://github.com/triggerdotdev/examples/assets/7555566/ffc8b890-ad37-4f57-b4c2-1e496a92619e)
+
 You can send an email by running the app and filling in the form. Alternatively, you can send a test email from the Trigger.dev test feature. You can Learn more about running tests from the [docs](https://trigger.dev/docs/documentation/guides/testing-jobs).
