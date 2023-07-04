@@ -8,7 +8,7 @@ Good examples are focused and avoid unnecessary elements. Start with bare essent
 
 Most examples should have a dedicated file where jobs are defined, e.g. `src/jobs.ts`.
 
-You should also try and use `https://cloud.trigger.dev` where it makes sense to make it as easy as possible to get started (or define an environment variable called `TRIGGER_API_URL`)
+You should also try and use `https://trigger.dev` where it makes sense to make it as easy as possible to get started (or define an environment variable called `TRIGGER_API_URL`)
 
 ## How to contribute a new example
 
