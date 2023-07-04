@@ -37,7 +37,7 @@ new Job(client, {
 // If you want a Job to run at a specific time or on a specific day of the week, you can use a CRON expression.
 new Job(client, {
   id: "cron-scheduled-job-1",
-  name: "CRON Scheduled Job-1",
+  name: "CRON Scheduled Job 1",
   version: "0.1.1",
   trigger: cronTrigger({
     // This job will run at 2:30pm every Monday.
