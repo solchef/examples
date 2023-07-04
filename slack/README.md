@@ -73,7 +73,7 @@ The schema you need to use for the test is:
 ...
 ```
 
-To do this you need to use a 'channel', which is a channel ID (which can be found at the bottom of the 'about' section of any Slack channel), and a message - 'text'. Replace the values below with your own:
+To test this Job you need to enter a 'channel', which is a channel ID (which can be found at the bottom of the 'about' section of any Slack channel), and a message - 'text'. Replace the values below with your own:
 
 ```json
 ...

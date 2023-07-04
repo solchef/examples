@@ -15,6 +15,8 @@ const githubOAuth = new Github({
   id: "githubOAuth",
 });
 
+// This Job will run when a new issue is opened on the triggerdotdev/empty repo
+// Once created, it will add a 'Bug' label to the issue
 new Job(client, {
   id: "github-integration-on-issue-opened",
   name: "GitHub Integration - On Issue Opened",
@@ -25,7 +27,7 @@ new Job(client, {
     owner: "triggerdotdev",
     repo: "empty",
   }),
-
+  //this function gets executed when the webhook is received
   run: async (payload, io, ctx) => {
     await io.github.addIssueLabels("add label", {
       owner: payload.repository.owner.login,
@@ -45,6 +47,7 @@ const githubAccessToken = new Github({
   token: process.env.GITHUB_TOKEN!,
 });
 
+// This Job will run when a new star is added or removed from the triggerdotdev/trigger.dev repo
 new Job(client, {
   id: "github-new-star-alert",
   name: "GitHub New Star Alert",
