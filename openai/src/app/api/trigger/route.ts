@@ -28,6 +28,12 @@ new Job(client, {
     openai,
   },
   run: async (payload, io, ctx) => {
+    await io.openai.retrieveModel("get-model", {
+      model: "gpt-3.5-turbo",
+    });
+
+    const models = await io.openai.listModels("list-models");
+
     await io.openai.backgroundCreateChatCompletion(
       "background-chat-completion",
       {
