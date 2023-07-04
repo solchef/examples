@@ -14,7 +14,7 @@ The @trigger.dev/examples repository serves as exploring the capabilities of Tri
 
 To get started with Trigger.dev and try out the examples in this repository, follow these steps:
 
-1. First, make sure you have a Trigger.dev account. If you don't have one, you can sign up at https://cloud.trigger.dev.
+1. First, make sure you have a Trigger.dev account. If you don't have one, you can sign up at https://trigger.dev.
 2. Clone this repository to your local machine using the following command:
 
 ```sh
