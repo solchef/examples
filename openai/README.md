@@ -1,4 +1,4 @@
-# Resend example Jobs
+# Open AI example Jobs
 
 This folder contains example Jobs using [Trigger.dev](https://trigger.dev) and [OpenAI](https://openai.com). You can use these Jobs as a starting point for creating your own Jobs.
 
@@ -7,7 +7,7 @@ The Jobs are located in `src/app/trigger` and include:
 - Tell me a joke
 - Generate hedgehog images
 
-## **Step 1.** Create accounts for Trigger.dev and Resend
+## **Step 1.** Create accounts for Trigger.dev and Open AI
 
 Create accounts for [Trigger.dev](https://trigger.dev) and [OpenAI](https://openai.com) before moving to the next step.
 
@@ -23,7 +23,7 @@ In a new termainal window, run the Trigger.dev CLI and add your API key to your 
 npx @trigger.dev/cli@latest init
 ```
 
-## **Step 4.** Get your Resend API key
+## **Step 4.** Get your Open AI API key
 
 [Sign up](https://openai.com) to OpenAI and get your API key.
 
