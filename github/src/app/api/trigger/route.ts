@@ -12,7 +12,7 @@ export const client = new TriggerClient({
 //create GitHub client using OAuth
 const githubOAuth = new Github({
   // This ID should match your GitHub integration ID on the 'Your connected integrations' dashboard.
-  id: "githubOAuth2",
+  id: "githubOAuth",
 });
 
 new Job(client, {
