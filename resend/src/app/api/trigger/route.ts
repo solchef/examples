@@ -10,11 +10,12 @@ export const client = new TriggerClient({
 });
 
 const resend = new Resend({
+  // This ID should match your Resend integration ID on the 'Your connected integrations' dashboard.
   id: "resend",
   apiKey: process.env.RESEND_API_KEY!,
 });
 
-//This job sends a basic email to a 'to' email address, with a 'subject', a 'text' field and a 'from' email address.
+//This job sends a basic email to a 'to' email address, a 'subject', a 'text' field and a 'from' email address.
 new Job(client, {
   id: "send-resend-email",
   name: "Send Resend Email",
