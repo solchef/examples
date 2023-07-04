@@ -1,24 +1,28 @@
-# Resend example jobs
+# Resend example Jobs
 
-This folder contains example jobs using Trigger.dev and Resend. You can use these Jobs as a starting point for your own Jobs.
+This folder contains example Jobs using [Trigger.dev](https://cloud.trigger.dev) and [Resend](https://resend.com). You can use these Jobs as a starting point for creating your own Jobs.
 
-## **Step 1:** Create accounts
+The Jobs are located in `src/app/trigger` and include:
 
-You will need to create a free account on [Trigger.dev](https://cloud.trigger.dev) and [Resend](https://resend.com) to use these examples.
+- Send an email to a 'to' email address with a 'subject', a 'text' field and a 'from' email address.
 
-## **Step 2:** Create a project and get a Trigger.dev API key
+## **Step 1.** Create accounts for Trigger.dev and Resend
 
-[Sign up](https://cloud.trigger.dev) to Trigger.dev, create an Organization and Project. Then get your API key from the "Environments & API Keys" page in your Project.
+Create accounts for [Trigger.dev](https://cloud.trigger.dev) and [Resend](https://resend.com) before moving to the next step.
 
-## **Step 3:** Run the CLI `init` command
+## **Step 2.** Setup your Project
 
-Run the Trigger.dev CLI to add your API key to your environment variables:
+Create an Organization and Project on Trigger.dev. Then copy your API key from the "Environments & API Keys" page in your Project.
+
+## **Step 3.** Run the CLI `init` command
+
+In a new termainal window, run the Trigger.dev CLI and add your API key to your environment variables:
 
 ```bash
-npx @trigger.dev/cli@latest init
+npx @trigger.dev/cli@latest dev
 ```
 
-## **Step 4:** Get a Resend API key
+## **Step 4.** Get your Resend API key
 
 [Sign up](https://resend.com/signup) to Resend and get your API key.
 
@@ -28,20 +32,28 @@ Add your Resend API key to your .env.local file:
 RESEND_API_KEY=your-api-key
 ```
 
-## **Step 5:** Install dependencies
+## **Step 5.** Install the dependencies
 
 ```bash
 npm install
 ```
 
-## **Step 6:** Run the Next.js project
+## **Step 6.** Run the Next.js project
 
 ```bash
 npm run dev
 ```
 
-## **Step 7:** Run the CLI `dev` command
+## **Step 7.** Run the CLI `dev` command
 
 ```bash
 npx @trigger.dev/cli@latest dev
 ```
+
+## **Step 8.** Test the Job
+
+Visit your Trigger.dev dashboard to view your Job. I will look something like this:
+
+[comment]: <> (insert a screenshot using GitHub upload showing this Job in Jobs list page. If more than 1 Job is in the list, use Cleanshot Pro to highlight the Job)
+
+You can send an email by running the app and filling in the form. Alternatively, you can send a test email from the Trigger.dev test feature. You can Learn more about running tests from the [docs](https://trigger.dev/docs/documentation/guides/testing-jobs).
