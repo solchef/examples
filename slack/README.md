@@ -12,7 +12,7 @@ Create accounts for [Trigger.dev](https://trigger.dev) and [Slack](https://Slack
 
 ## **Step 2:** Setup your Project
 
-Create an Organization and Project on Trigger.dev. Then copy your API key from the "Environments & API Keys" page in your Project.
+Create an Organization and Project in the Trigger.dev app. Then copy your API key from the "Environments & API Keys" page in your Project.
 
 ## **Step 3:** Run the CLI `init` command
 
@@ -28,7 +28,7 @@ Navigate to the 'Integrations' tab inside your project in the [Trigger.dev app](
 
 Select the Slack integration and follow the instructions to set up your Slack OAuth. Make sure to call your Slack OAuth ID `slack` so that it matches the ID in your `src/app/api/trigger/route.ts` file.
 
-_NB: The default selected scopes will work for this example._
+_NB: The default selected scopes will work for these examples._
 
 ## **Step 5:** Install the dependencies
 
@@ -56,7 +56,9 @@ npx @trigger.dev/cli@latest dev
 
 ### Job 1:
 
-You can test this job with the Trigger.dev [test feature](https://trigger.dev/docs/documentation/guides/testing-jobs). That can be found on the Job page in the [Trigger.dev app](https://trigger.dev).
+This job sends a basic message to a Slack channel.
+
+You can test this job using the Trigger.dev [test feature](https://trigger.dev/docs/documentation/guides/testing-jobs). That can be found on the Slack Job page in the [Trigger.dev app](https://trigger.dev).
 
 The schema you need to use for the test is:
 
@@ -83,6 +85,8 @@ To do this you need to use a 'channel', which is a channel ID (which can be foun
 
 ...
 ```
+
+When you run the test, you should see your message appear in your Slack channel!
 
 ---
 
