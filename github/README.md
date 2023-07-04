@@ -6,7 +6,7 @@ The Jobs are located in `src/app/trigger` and include:
 
 - Job 1: This Job will run when a new issue is created on the `triggerdotdev` / `empty` repository. Once created it will then add a 'Bug' label to the issue.
 
-- Job 2: This Job will run when a new star is added or removed from the triggerdotdev/trigger.dev repository
+- Job 2: This Job will run when a new star is added or removed from the `triggerdotdev` / `trigger.dev` repository
 
 ## **Step 1:** Create accounts for Trigger.dev and GitHub
 
@@ -14,7 +14,7 @@ Create accounts for [Trigger.dev](https://trigger.dev) and [GitHub](https://GitH
 
 ## **Step 2:** Setup your Project
 
-Create an Organization and Project in the Trigger.dev app. Then copy your API key from the "Environments & API Keys" page in your Project.
+Create or select an Organization and Project in the Trigger.dev app. Then copy your API key from the "Environments & API Keys" page in your Project.
 
 ## **Step 3:** Run the CLI `init` command
 

@@ -12,7 +12,7 @@ Create accounts for [Trigger.dev](https://trigger.dev) and [Slack](https://Slack
 
 ## **Step 2:** Setup your Project
 
-Create an Organization and Project in the Trigger.dev app. Then copy your API key from the "Environments & API Keys" page in your Project.
+Create or select an Organization and Project in the Trigger.dev app. Then copy your API key from the "Environments & API Keys" page in your Project.
 
 ## **Step 3:** Run the CLI `init` command
 
