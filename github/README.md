@@ -32,7 +32,7 @@ _Both authentication methods are used in this example._
 
 Navigate to the 'Integrations' tab inside your project in the [Trigger.dev app](https://trigger.dev).
 
-Select the GitHub integration and follow the instructions to set up your GitHub OAuth. Make sure to call your GitHub OAuth ID `GitHub` so that it matches the ID in your `src/app/api/trigger/route.ts` file.
+Select the GitHub integration and follow the instructions to set up GitHub OAuth. Make sure to call your GitHub OAuth ID `GitHub` so that it matches the ID in your `src/app/api/trigger/route.ts` file.
 
 _NB: Select `repo` and `admin:repo_hook` scopes._
 
@@ -42,9 +42,8 @@ Go to your GitHub profile, select 'Settings', then 'Developer settings', then 'P
 
 Create a new token with the following permissions:
 
-**Repository permissions:** Read and Write access to repository hooks, Read access to repository metadata
-
-**Organization permissions:** Read and Write access to organization hooks
+- **Repository permissions:** Read and Write access to repository hooks, Read access to repository metadata
+- **Organization permissions:** Read and Write access to organization hooks
 
 Then add your token to your environment variables:
 

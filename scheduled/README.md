@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GitHub example Jobs
 
-## Getting Started
+This folder contains example scheduled Jobs using [Trigger.dev](https://trigger.dev).
 
-First, run the development server:
+The Jobs are located in `src/app/trigger` and include:
+
+- Job 1: Interval: This Job will run every 60 seconds, starting 60 seconds after this Job is first indexed.
+
+- Job 2: Using CRON syntax: this Job will run at 2:30pm every Monday.
+
+## **Step 1:** Create and account for Trigger.dev
+
+Create an account at [Trigger.dev](https://trigger.dev).
+
+## **Step 2:** Set up your Project
+
+Create or select an Organization and Project in the Trigger.dev app. Then copy your API key from the "Environments & API Keys" page in your Project.
+
+## **Step 3:** Run the CLI `init` command
+
+In a new terminal window, run the Trigger.dev CLI and add your API key to your Trigger.dev environment variables:
+
+```bash
+npx @trigger.dev/cli@latest init
+```
+
+## **Step 4:** Install the dependencies
+
+```bash
+npm install
+```
+
+## **Step 5:** Run the Next.js project
+
+Run the Next.js project:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## **Step 6:** Run the CLI `dev` command
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+With the Next.js project running, open another terminal window and run the Trigger.dev CLI `dev` command:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npx @trigger.dev/cli@latest dev
+```
 
-## Learn More
+## **Step 8:** Test the Jobs
 
-To learn more about Next.js, take a look at the following resources:
+Scheduled Jobs will not run in development, so to test they are connected you will need to trigger them manually.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To do this, please navigate to the [Trigger.dev](https://trigger.dev) app and select your Project. Then select the 'Jobs' tab, click into the Job you'd like to test (either `Interval scheduled Job` or `Cron scheduled Job`) and click on the 'Test' tab. To run the test, follow [these steps](https://trigger.dev/docs/documentation/guides/testing-jobs).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You can learn more about [testing](https://trigger.dev/docs/documentation/guides/testing-jobs), [viewing runs](https://trigger.dev/docs/documentation/guides/viewing-runs), and much more in our [docs](https://trigger.dev/docs).
