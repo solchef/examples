@@ -2,7 +2,7 @@
 
 This folder contains example Jobs using [Trigger.dev](https://trigger.dev) and [OpenAI](https://openai.com). You can use these Jobs as a starting point for creating your own Jobs.
 
-The Jobs are located in `src/app/trigger` and include:
+The Jobs are located in `src/jobs` and include:
 
 - Tell me a joke
 - Generate hedgehog images

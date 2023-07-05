@@ -2,11 +2,11 @@
 
 This folder contains example Jobs using [Trigger.dev](https://trigger.dev) and [GitHub](https://GitHub.com). You can use these Jobs as a starting point for creating your own Jobs.
 
-The Jobs are located in `src/app/trigger` and include:
+The Jobs are located in `src/jobs` and include:
 
-- Job 1: This Job will run when a new issue is created on a repository. Once created it will add a 'Bug' label to the issue.
+- onIssueOpened: This Job will run when a new issue is created on a repository. Once created it will add a 'Bug' label to the issue.
 
-- Job 2: This Job will run when a new star is added or removed from the `triggerdotdev` / `trigger.dev` repository
+- newStarAlert: This Job will run when a new star is added or removed from the `triggerdotdev/trigger.dev` repository
 
 ## **Step 1:** Create accounts for Trigger.dev and GitHub
 
@@ -32,7 +32,7 @@ _Both authentication methods are used in this example._
 
 Navigate to the 'Integrations' tab inside your project in the [Trigger.dev app](https://trigger.dev).
 
-Select the GitHub integration and follow the instructions to set up GitHub OAuth. Make sure to call your GitHub OAuth ID `github` so that it matches the ID in your `src/app/api/trigger/route.ts` file.
+Select the GitHub integration and follow the instructions to set up GitHub OAuth. Make sure to call your GitHub OAuth ID `githubOAuth` so that it matches the ID in your Job file.
 
 _NB: Select the `repo` and `admin:repo_hook` scopes._
 
@@ -75,13 +75,13 @@ npx @trigger.dev/cli@latest dev
 
 ## **Step 8:** Test the Jobs
 
-### **Job 1:**
+### **Job newStarAlert:**
 
 This Job will run when a new issue is created on your specified "owner" / "repo" repository. Once created it will then add a 'Bug' label to the issue.
 
 To test this Job, create a new issue on the repository. If a 'Bug' label is added after a few seconds the Job has run successfully.
 
-### **Job 2:**
+### **Job onIssueOpened:**
 
 This Job will run when a new star is added or removed from the `triggerdotdev/trigger.dev` repo.
 

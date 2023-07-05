@@ -2,11 +2,11 @@
 
 This folder contains example scheduled Jobs using [Trigger.dev](https://trigger.dev).
 
-The Jobs are located in `src/app/trigger` and include:
+The Jobs are located in `src/jobs` and include:
 
-- Job 1: Interval: This Job will run every 60 seconds, starting 60 seconds after this Job is first indexed.
+- interval: This Job will run every 60 seconds, starting 60 seconds after this Job is first indexed.
 
-- Job 2: Using CRON syntax: this Job will run at 2:30pm every Monday.
+- cronScheduled: Using CRON syntax: this Job will run at 2:30pm every Monday.
 
 ## **Step 1:** Create and account for Trigger.dev
 

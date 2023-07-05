@@ -2,9 +2,9 @@
 
 This folder contains example Jobs using [Trigger.dev](https://trigger.dev) and [Resend](https://resend.com). You can use these Jobs as a starting point for creating your own Jobs.
 
-The Jobs are located in `src/app/trigger` and include:
+The Jobs are located in `src/jobs` and include:
 
-- Job 1: Send an email to a 'to' email address with a 'subject', a 'text' field and a 'from' email address.
+- resendBasicEmail: Send an email to a 'to' email address with a 'subject', a 'text' field and a 'from' email address.
 
 ## **Step 1:** Create accounts for Trigger.dev and Resend
 
@@ -56,7 +56,7 @@ npx @trigger.dev/cli@latest dev
 
 ## **Step 8:** Test the Jobs
 
-- Job 1: You can test the Job by going to `http://localhost:3000/` and filling in the form fields. Alternatively, you can send a test email using the Trigger.dev [test feature](https://trigger.dev/docs/documentation/guides/testing-jobs). That can be found on the Job page in the [Trigger.dev app](https://trigger.dev).
+- resendBasicEmail: You can test the Job by going to `http://localhost:3000/` and filling in the form fields. Alternatively, you can send a test email using the Trigger.dev [test feature](https://trigger.dev/docs/documentation/guides/testing-jobs). That can be found on the Job page in the [Trigger.dev app](https://trigger.dev).
 
 ---
 
