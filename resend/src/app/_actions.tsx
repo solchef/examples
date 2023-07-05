@@ -1,6 +1,6 @@
 "use server";
 
-import { client } from "./api/trigger/route";
+import { client } from "@/trigger";
 
 export async function sendEmail(
   to: string,

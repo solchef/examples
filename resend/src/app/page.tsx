@@ -1,7 +1,5 @@
-import Image from "next/image";
-import { sendEmail } from "./_actions";
+import { ResendIcon, TriggerDotDevLightIcon } from "@trigger.dev/companyicons";
 import SendEmailForm from "./components/SendEmailForm";
-import { TriggerDotDevLightIcon, ResendIcon } from "@trigger.dev/companyicons";
 
 export default function Home() {
   return (
