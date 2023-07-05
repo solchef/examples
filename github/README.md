@@ -4,7 +4,7 @@ This folder contains example Jobs using [Trigger.dev](https://trigger.dev) and [
 
 The Jobs are located in `src/app/trigger` and include:
 
-- Job 1: This Job will run when a new issue is created on the `triggerdotdev` / `empty` repository. Once created it will then add a 'Bug' label to the issue.
+- Job 1: This Job will run when a new issue is created on a repository. Once created it will add a 'Bug' label to the issue.
 
 - Job 2: This Job will run when a new star is added or removed from the `triggerdotdev` / `trigger.dev` repository
 
@@ -12,7 +12,7 @@ The Jobs are located in `src/app/trigger` and include:
 
 Create accounts for [Trigger.dev](https://trigger.dev) and [GitHub](https://GitHub.com) before moving to the next step.
 
-## **Step 2:** Setup your Project
+## **Step 2:** Set up your Project
 
 Create or select an Organization and Project in the Trigger.dev app. Then copy your API key from the "Environments & API Keys" page in your Project.
 
@@ -24,23 +24,23 @@ In a new terminal window, run the Trigger.dev CLI and add your API key to your T
 npx @trigger.dev/cli@latest init
 ```
 
-## **Step 4:** Set up your GitHub OAuth using the Trigger.dev GitHub integration or use your own GitHub token
+## **Step 4:** Set up GitHub authentication using the Trigger.dev GitHub integration or using your own GitHub token
 
 _Both authentication methods are used in this example._
 
-### **Option 1:** Use the Trigger.dev GitHub integration
+### **Option 1:** Using the Trigger.dev GitHub integration
 
 Navigate to the 'Integrations' tab inside your project in the [Trigger.dev app](https://trigger.dev).
 
-Select the GitHub integration and follow the instructions to set up GitHub OAuth. Make sure to call your GitHub OAuth ID `GitHub` so that it matches the ID in your `src/app/api/trigger/route.ts` file.
+Select the GitHub integration and follow the instructions to set up GitHub OAuth. Make sure to call your GitHub OAuth ID `github` so that it matches the ID in your `src/app/api/trigger/route.ts` file.
 
-_NB: Select `repo` and `admin:repo_hook` scopes._
+_NB: Select the `repo` and `admin:repo_hook` scopes._
 
-### **Option 2:** Use your own GitHub token
+### **Option 2:** Using your own GitHub token
 
 Go to your GitHub profile, select 'Settings', then 'Developer settings', then 'Personal access tokens'.
 
-Create a new token with the following permissions:
+Create a new fine-grained token with the following permissions:
 
 - **Repository permissions:** Read and Write access to repository hooks, Read access to repository metadata
 - **Organization permissions:** Read and Write access to organization hooks
@@ -77,15 +77,15 @@ npx @trigger.dev/cli@latest dev
 
 ### **Job 1:**
 
-This Job will run when a new issue is created on the `triggerdotdev` / `empty` repository. Once created it will then add a 'Bug' label to the issue.
+This Job will run when a new issue is created on your specified "owner" / "repo" repository. Once created it will then add a 'Bug' label to the issue.
 
-To test this Job, create a new issue on the [triggerdotdev/empty](https://github.com/triggerdotdev/empty) repository.
+To test this Job, create a new issue on the repository. If a 'Bug' label is added after a few seconds the Job has run successfully.
 
 ### **Job 2:**
 
 This Job will run when a new star is added or removed from the `triggerdotdev/trigger.dev` repo.
 
-To test this Job, star or unstar the [triggerdotdev/trigger.dev](https://github.com/triggerdotdev/trigger.dev) repository.
+To test this Job, star or unstar the [triggerdotdev/trigger.dev](https://github.com/triggerdotdev/trigger.dev) repository, if a 'Bug' label is added after a few seconds the Job has run successfully.
 
 ---
 

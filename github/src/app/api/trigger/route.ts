@@ -15,7 +15,8 @@ const githubOAuth = new Github({
   id: "githubOAuth",
 });
 
-// This Job will run when a new issue is opened on the triggerdotdev/empty repo
+// Job 1
+// This Job will run when a new issue is opened on a repo you have admin rights to
 // Once created, it will add a 'Bug' label to the issue
 new Job(client, {
   id: "github-integration-on-issue-opened",
@@ -24,7 +25,9 @@ new Job(client, {
   integrations: { github: githubOAuth },
   trigger: githubOAuth.triggers.repo({
     event: events.onIssueOpened,
+    // IMPORTANT: change the 'owner' from "triggerdotdev" to your GitHub username, or an organization you have admin rights to
     owner: "triggerdotdev",
+    // IMPORTANT: change the repo from "empty" to a repo you have admin rights to
     repo: "empty",
   }),
   //this function gets executed when the webhook is received
@@ -47,6 +50,7 @@ const githubAccessToken = new Github({
   token: process.env.GITHUB_TOKEN!,
 });
 
+// Job 2
 // This Job will run when a new star is added or removed from the triggerdotdev/trigger.dev repo
 new Job(client, {
   id: "github-new-star-alert",
