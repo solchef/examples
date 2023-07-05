@@ -13,7 +13,7 @@ Create accounts for [Trigger.dev](https://trigger.dev) and [OpenAI](https://open
 
 ## **Step 2.** Setup your Project
 
-Create an Organization and Project on Trigger.dev. Then copy your API key from the "Environments & API Keys" page in your Project.
+Create or select an Organization and Project on Trigger.dev. Then copy your API key from the "Environments & API Keys" page in your Project.
 
 ## **Step 3.** Run the CLI `init` command
 
