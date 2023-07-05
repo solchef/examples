@@ -14,6 +14,7 @@ const slack = new Slack({
   id: "slack",
 });
 
+// Job 1
 // This job sends a basic message to a Slack channel.
 new Job(client, {
   id: "post-slack-message",

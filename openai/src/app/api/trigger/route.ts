@@ -14,6 +14,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY!,
 });
 
+// Job 1
 new Job(client, {
   id: "openai-tasks",
   name: "OpenAI – Tell me a joke",
@@ -49,6 +50,7 @@ new Job(client, {
   },
 });
 
+// Job 2
 new Job(client, {
   id: "openai-images",
   name: "OpenAI – Generate hedgehog images",
