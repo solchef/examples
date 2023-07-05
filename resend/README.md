@@ -10,7 +10,7 @@ The Jobs are located in `src/jobs` and include:
 
 Create accounts for [Trigger.dev](https://trigger.dev) and [Resend](https://resend.com) before moving to the next step.
 
-## **Step 2:** Setup your Project
+## **Step 2:** Set up your Project
 
 Create or select an Organization and Project on Trigger.dev. Then copy your API key from the "Environments & API Keys" page in your Project.
 

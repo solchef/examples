@@ -1,10 +1,10 @@
 # GitHub example Jobs
 
-This folder contains example Jobs using [Trigger.dev](https://trigger.dev) and [GitHub](https://GitHub.com). You can use these Jobs as a starting point for creating your own Jobs.
+This folder contains example Jobs using [Trigger.dev](https://trigger.dev) and [GitHub](https://GitHub.com). You can use these Jobs as a starting point for creating your own.
 
 The Jobs are located in `src/jobs` and include:
 
-- onIssueOpened: This Job will run when a new issue is created on a repository. Once created it will add a 'Bug' label to the issue.
+- onIssueOpened: This Job will run when a new issue is created in a repository. Once created it will add a 'Bug' label to the issue.
 
 - newStarAlert: This Job will run when a new star is added or removed from the `triggerdotdev/trigger.dev` repository
 

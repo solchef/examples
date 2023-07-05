@@ -4,11 +4,11 @@ This folder contains example scheduled Jobs using [Trigger.dev](https://trigger.
 
 The Jobs are located in `src/jobs` and include:
 
-- delayJob: This Job will run every 60 seconds, starting 60 seconds after this Job is first indexed.
+- delayJob: This Job will run every 60 seconds, starting 60 seconds after the Job is first indexed.
 
-## **Step 1:** Create and account for Trigger.dev
+## **Step 1:** Create a Trigger.dev account
 
-Create an account at [Trigger.dev](https://trigger.dev).
+Create an account for [Trigger.dev](https://trigger.dev).
 
 ## **Step 2:** Set up your Project
 
@@ -44,6 +44,6 @@ With the Next.js project running, open another terminal window and run the Trigg
 npx @trigger.dev/cli@latest dev
 ```
 
-## **Step 8:** Test the Jobs
+## **Step 7:** Test the Jobs
 
 You can learn more about [testing](https://trigger.dev/docs/documentation/guides/testing-jobs), [viewing runs](https://trigger.dev/docs/documentation/guides/viewing-runs), and much more in our [docs](https://trigger.dev/docs).

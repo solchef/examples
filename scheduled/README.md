@@ -8,9 +8,9 @@ The Jobs are located in `src/jobs` and include:
 
 - cronScheduled: Using CRON syntax: this Job will run at 2:30pm every Monday.
 
-## **Step 1:** Create and account for Trigger.dev
+## **Step 1:** Create a Trigger.dev account
 
-Create an account at [Trigger.dev](https://trigger.dev).
+Create an account for [Trigger.dev](https://trigger.dev).
 
 ## **Step 2:** Set up your Project
 
@@ -46,7 +46,7 @@ With the Next.js project running, open another terminal window and run the Trigg
 npx @trigger.dev/cli@latest dev
 ```
 
-## **Step 8:** Test the Jobs
+## **Step 7:** Test the Jobs
 
 Scheduled Jobs will not run in development, so to test they are connected you will need to trigger them manually.
 
