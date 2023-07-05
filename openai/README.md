@@ -17,7 +17,7 @@ Create an Organization and Project on Trigger.dev. Then copy your API key from t
 
 ## **Step 3.** Run the CLI `init` command
 
-In a new termainal window, run the Trigger.dev CLI and add your API key to your environment variables:
+In a new terminal window, run the Trigger.dev CLI and add your API key to your environment variables:
 
 ```bash
 npx @trigger.dev/cli@latest init
