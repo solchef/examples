@@ -9,7 +9,7 @@ const resend = new Resend({
   apiKey: process.env.RESEND_API_KEY!,
 });
 
-// Job 1
+// resendBasicEmail
 // This job sends a basic email to a 'to' email address, a 'subject', a 'text' field and a 'from' email address.
 new Job(client, {
   id: "send-resend-email",

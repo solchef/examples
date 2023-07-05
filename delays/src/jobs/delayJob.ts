@@ -1,7 +1,8 @@
 import { client } from "@/trigger";
 import { Job, eventTrigger } from "@trigger.dev/sdk";
 
-//this job will be triggered by an event, and will wait 5 minutes before logging a reply
+// delayJob
+// this Job will be triggered by an event, and will wait 5 minutes before logging a reply
 new Job(client, {
   id: "delay-job",
   name: "Delay Job",
