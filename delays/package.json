@@ -25,6 +25,6 @@
     "@trigger.dev/nextjs": "^1.0.0-next.6"
   },
   "trigger.dev": {
-    "endpointId": "delays"
+    "endpointId": "my-app"
   }
 }

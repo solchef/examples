@@ -28,6 +28,6 @@
     "zod": "^3.21.4"
   },
   "trigger.dev": {
-    "endpointId": "resend"
+    "endpointId": "my-app"
   }
 }
