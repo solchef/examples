@@ -1,4 +1,4 @@
-# GitHub example Jobs
+# Scheduled example Jobs
 
 This folder contains example scheduled Jobs using [Trigger.dev](https://trigger.dev).
 
