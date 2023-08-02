@@ -1,6 +1,5 @@
 import { client } from "@/trigger";
 import { Github, events } from "@trigger.dev/github";
-import { Job } from "@trigger.dev/sdk";
 import { Slack } from "@trigger.dev/slack";
 
 // create GitHub client using a token
@@ -17,7 +16,7 @@ const slack = new Slack({
 
 // newStarToSlack
 // This Job will run when a star is added or removed from the triggerdotdev/trigger.dev repo
-new Job(client, {
+client.defineJob({
   id: "github-new-star-to-slack",
   name: "GitHub - New Star to Slack",
   version: "0.1.0",

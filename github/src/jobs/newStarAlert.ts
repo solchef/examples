@@ -1,6 +1,5 @@
 import { client } from "@/trigger";
 import { Github, events } from "@trigger.dev/github";
-import { Job } from "@trigger.dev/sdk";
 
 // create GitHub client using a token
 const githubAccessToken = new Github({
@@ -11,7 +10,7 @@ const githubAccessToken = new Github({
 
 // newStarAlert
 // This Job will run when a star is added or removed from the triggerdotdev/trigger.dev repo
-new Job(client, {
+client.defineJob({
   id: "github-new-star-alert",
   name: "GitHub - New Star Alert",
   version: "0.1.0",
