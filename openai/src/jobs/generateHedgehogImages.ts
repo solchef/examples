@@ -1,6 +1,6 @@
-import { Job, eventTrigger } from "@trigger.dev/sdk";
 import { client } from "@/trigger";
 import { OpenAI } from "@trigger.dev/openai";
+import { eventTrigger } from "@trigger.dev/sdk";
 import { z } from "zod";
 
 const openai = new OpenAI({
@@ -9,7 +9,7 @@ const openai = new OpenAI({
 });
 
 // generateHedgehogImages
-new Job(client, {
+client.defineJob({
   id: "openai-images",
   name: "OpenAI – Generate hedgehog images",
   version: "0.0.1",
@@ -21,11 +21,15 @@ new Job(client, {
     openai,
   },
   run: async (payload, io, ctx) => {
-    await io.openai.createImage("image", {
+    const imageResults = await io.openai.createImage("image", {
       prompt: "A hedgehog wearing a party hat",
       n: 2,
       size: "256x256",
       response_format: "url",
     });
+
+    return {
+      images: imageResults.data?.map((image) => image.url),
+    };
   },
 });

@@ -1,6 +1,6 @@
-import { Job, eventTrigger } from "@trigger.dev/sdk";
 import { client } from "@/trigger";
 import { OpenAI } from "@trigger.dev/openai";
+import { eventTrigger } from "@trigger.dev/sdk";
 import { z } from "zod";
 
 const openai = new OpenAI({
@@ -9,7 +9,7 @@ const openai = new OpenAI({
 });
 
 // tellMeAJoke
-new Job(client, {
+client.defineJob({
   id: "openai-tasks",
   name: "OpenAI – Tell me a joke",
   version: "0.0.1",
@@ -29,7 +29,7 @@ new Job(client, {
 
     const models = await io.openai.listModels("list-models");
 
-    await io.openai.backgroundCreateChatCompletion(
+    const jokeResult = await io.openai.backgroundCreateChatCompletion(
       "background-chat-completion",
       {
         model: "gpt-3.5-turbo",
@@ -41,5 +41,9 @@ new Job(client, {
         ],
       }
     );
+
+    return {
+      joke: jokeResult.choices[0]?.message?.content,
+    };
   },
 });
