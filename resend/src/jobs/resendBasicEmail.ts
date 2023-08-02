@@ -1,6 +1,6 @@
 import { client } from "@/trigger";
 import { Resend } from "@trigger.dev/resend";
-import { Job, eventTrigger } from "@trigger.dev/sdk";
+import { eventTrigger } from "@trigger.dev/sdk";
 import { z } from "zod";
 
 const resend = new Resend({
@@ -11,7 +11,7 @@ const resend = new Resend({
 
 // resendBasicEmail
 // This job sends a basic email to a 'to' email address, a 'subject', a 'text' field and a 'from' email address.
-new Job(client, {
+client.defineJob({
   id: "send-resend-email",
   name: "Send Resend Email",
   version: "0.1.0",
