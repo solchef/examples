@@ -1,10 +1,10 @@
 import { client } from "@/trigger";
-import { Job, intervalTrigger } from "@trigger.dev/sdk";
+import { intervalTrigger } from "@trigger.dev/sdk";
 
 // interval
 // This Job will run every 60 seconds, starting 60 seconds after this Job is first indexed.
 // Note that it does not run at the top of every minute, but rather 60 seconds after the Job is first indexed.
-new Job(client, {
+client.defineJob({
   id: "interval-scheduled-job-1",
   name: "Interval scheduled Job 1",
   version: "0.1.1",

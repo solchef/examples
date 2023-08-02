@@ -1,9 +1,9 @@
 import { client } from "@/trigger";
-import { Job, cronTrigger } from "@trigger.dev/sdk";
+import { cronTrigger } from "@trigger.dev/sdk";
 
 // cronScheduled
 // If you want a Job to run at a specific time or on a specific day of the week, you can use a CRON expression.
-new Job(client, {
+client.defineJob({
   id: "cron-scheduled-job-1",
   name: "CRON Scheduled Job 1",
   version: "0.1.1",
