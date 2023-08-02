@@ -1,5 +1,5 @@
-import { Job, eventTrigger } from "@trigger.dev/sdk";
 import { client } from "@/trigger";
+import { eventTrigger } from "@trigger.dev/sdk";
 import { Slack } from "@trigger.dev/slack";
 import { z } from "zod";
 
@@ -10,7 +10,7 @@ const slack = new Slack({
 
 // Job 1
 // This job sends a basic message to a Slack channel.
-new Job(client, {
+client.defineJob({
   id: "post-slack-message",
   name: "Post Slack Message",
   version: "0.0.1",
