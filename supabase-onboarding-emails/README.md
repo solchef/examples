@@ -2,7 +2,7 @@
 
 This example is adapted from the [Supabase Next.js Auth & User Management Starter](https://github.com/supabase/supabase/tree/cae0b20cce0ca270a724fcffce83b4a642135323/examples/user-management/nextjs-user-management) and adds additional functionality using [Trigger.dev](https://trigger.dev).
 
-Now when a user signs up and confirms their email address, they will receive 3 "onboarding" emails over 2 days using [Resend.com](https://resend.com) and [Trigger.dev](https://trigger.dev)
+### Example Job: When a user signs up and confirms their email address, they will receive 3 "onboarding" emails over 2 days using [Resend.com](https://resend.com) and [Trigger.dev](https://trigger.dev)
 
 This demonstrates how to use:
 
@@ -107,9 +107,13 @@ You'll be redirected back to Trigger.dev with your newly created integration. In
 
 Run the application: `npm run dev`. This will concurrently run the `next` dev server on port 3000 and the `@trigger.dev/cli dev` command, which will tunnel your Next.js server to Trigger.dev and index any jobs defined.
 
-Open your browser to `https://localhost:3000/` and you are ready to go 🚀.
+Open your browser to `https://localhost:3000/` and you are ready to test this Job 🚀.
 
-Try signing up and then you can head back to the Jobs list in your Trigger.dev dashboard and you should see your newly created job:
+![image](./docs/localhost.png)
+
+Enter your email, send the magic link, and once you have confirmed the Job will start running.
+
+Try signing up and then you can head back to the Jobs list in your Trigger.dev project dashboard and you should see your newly created Job:
 
 ![image](./docs/welcome-job.png)
 
