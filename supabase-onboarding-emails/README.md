@@ -68,7 +68,7 @@ RESEND_FROM_EMAIL="hi@yourdomain.com"
 
 ### 1. Get your Trigger.dev API Key
 
-If you don't already have a Trigger.dev account, you can create one [here](https://cloud.trigger.dev/login?redirectTo=%2F). Since Trigger.dev Cloud is currently in private beta, you can use the invite code `supabase-onboarding-emails-769` invite code to get in (let's just keep this our little secret). Under the free tier you can do 10k job runs a month.
+If you don't already have a Trigger.dev account, you can create one [here](https://cloud.trigger.dev/login?redirectTo=%2F). Under the free tier you can do 10k job runs a month.
 
 During signup you'll be asked to create your first Trigger.dev project. Once you've done that, head over to the Project "Environment & API Keys" page and copy the `DEV` environment server key:
 
