@@ -23,7 +23,7 @@ Sign up to Supabase - [https://supabase.com/dashboard](https://supabase.com/dash
 
 ### 2. Run "User Management" Quickstart
 
-Once your database has started, head over to your project's [SQL Editor](https://supabase.com/dashboard/project/_/sql/templates) and run the "User Management Starter" quickstart. On the `SQL editor` page, scroll down until you see `User Management Starter: Sets up a public Profiles table which you can access with your API`. Click that, then click `RUN` to execute that query and create a new `profiles` table. When that's finished, head over to the `Table Editor` and see your new `profiles` table.
+Once your database has started, head over to your project's [SQL Editor](https://supabase.com/dashboard/project/_/sql/templates) and click `Quickstarts`. Scroll down until you see `User Management Starter: Sets up a public Profiles table which you can access with your API`. Click that, then click `RUN` to execute that query and create a new `profiles` table. When that's finished, head over to the `Table Editor` and see your new `profiles` table.
 
 ### 3. Get the URL and Key
 
@@ -111,7 +111,7 @@ Open your browser to `https://localhost:3000/` and you are ready to test this Jo
 
 ![image](./docs/localhost.png)
 
-Enter your email, send the magic link, and once you have confirmed the Job will start running.
+Enter your email, send the magic link, and once you have clicked the magic link in the email the Job will start running.
 
 Try signing up and then you can head back to the Jobs list in your Trigger.dev project dashboard and you should see your newly created Job:
 
