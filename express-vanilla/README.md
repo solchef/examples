@@ -4,6 +4,8 @@ This project contains an example of how to use [Trigger.dev](https://trigger.dev
 
 > Specifically, this project is nicknamed "vanilla" because it only uses the Trigger.dev SDK and no other official integrations to demonstrate the workflow and processes of how to build a Trigger.dev integration.
 
+![Trigger.dev Express example job](screenshot.png)
+
 ## Overview
 
 ### Trigger.dev job
