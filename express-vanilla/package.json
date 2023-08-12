@@ -1,0 +1,33 @@
+{
+  "name": "express-vanilla",
+  "version": "1.0.0",
+  "description": "Example Express application for trigger.dev",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "trigger:dev": "npx @trigger.dev/cli@latest dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "trigger.dev",
+    "@trigger.dev",
+    "trigger",
+    "express",
+    "openai"
+  ],
+  "author": {
+    "name": "Liran Tal",
+    "email": "liran@lirantal.com"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@trigger.dev/openai": "^2.0.7",
+    "@trigger.dev/sdk": "^2.0.7",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "trigger.dev": {
+    "endpointId": "trigger-express-example-vanilla"
+  }
+}
