@@ -36,7 +36,7 @@ Clone this repository:
 
 ```bash
 git clone
-cd triggerdev-express-example-vanilla
+cd cd examples/express-vanilla
 ```
 
 ### Step 2: Set up project dependencies
