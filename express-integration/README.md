@@ -55,9 +55,20 @@ npm start
 At this point, the Express server will run on port 3000 by default and serves the static web page from the `public/` directory. You can change this by setting the `PORT` environment variable.
 
 The server exposes the following API endpoints:
+
 1. `POST /api/trigger` - This is the endpoint that Trigger.dev will call when a trigger is fired and is used solely to interact with the Trigger.dev API.
 2. `POST /api/titles` - This is the endpoint that the UI calls to generate a title using the OpenAI API. It uses the Trigger.dev API to schedule a background task that processes the OpenAI API response. The title isn't immediately returned as this is an asynchronous process.
 3. `GET /api/titles` - This is the endpoint that the UI calls every second with a fetch request to check if the background task has completed and a title value exists on the server-side. If it has, it returns the title. If not, it will poll indefinitely.
+
+### Step 5. Run the Trigger.dev CLI (locally)
+
+Start the Trigger.dev CLI:
+
+```bash
+npm run trigger:dev
+```
+
+This will setup a tunnel so your machine can be reached by Trigger.dev. It will also register that URL with your project so that when a trigger is fired, it will be sent to your machine.
 
 ## Disclaimer
 
