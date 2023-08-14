@@ -69,6 +69,16 @@ npm start
 
 At this point, the Express server will run on port 3000 by default and serves the static web page from the `public/` directory. You can change this by setting the `PORT` environment variable.
 
+### Step 5. Run the Trigger.dev CLI (locally)
+
+Start the Trigger.dev CLI:
+
+```bash
+npm run trigger:dev
+```
+
+This will setup a tunnel so your machine can be reached by Trigger.dev. It will also register that URL with your project so that when a trigger is fired, it will be sent to your machine.
+
 ## Disclaimer
 
 This project's sole purpose is to demonstrate how to use Trigger.dev with an Express application. It is not intended to be used in production and explicitly makes use of naive and rudimentary approaches to provide a functional example. It is not intended to be used as a reference for best practices or production-ready code.
