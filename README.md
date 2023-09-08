@@ -1,6 +1,6 @@
 # Trigger.dev examples
 
-Welcome to @trigger.dev/examples, a collection of projects using Trigger.dev.
+Welcome to @trigger.dev/examples, a collection of full projects using Trigger.dev.
 
 ## About Trigger.dev
 
@@ -9,6 +9,17 @@ Trigger.dev is a framework for creating long-running Jobs directly in your Next.
 ## Purpose of this Repository
 
 The @trigger.dev/examples repository serves as exploring the capabilities of Trigger.dev through practical examples. Each project in this collection demonstrates how to leverage Trigger.dev's features.
+
+## Projects in this Repository
+
+The following projects are currently available in this repository. To run them, simply follow the instructions in the README files linked below.
+
+| Project Name                                                                                                     | Description                                                                                                                                 | Integrations                                                                                                               | Author                                  | Status |
+| ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- | ------ |
+| [OpenAI text summarizer](https://github.com/triggerdotdev/examples/tree/main/openai-text-summarizer)             | An app which uses OpenAI to summarize an article and then post the result to Slack.                                                         | [OpenAI](https://trigger.dev/docs/integrations/apis/openai)[Slack](https://trigger.dev/docs/integrations/apis/slack)       | Trigger.dev                             | ✅     |
+| [Supabase onboarding emails](https://github.com/triggerdotdev/examples/tree/main/supabase-onboarding-emails)     | When a user signs up and confirms their email address, they will receive 3 "onboarding" emails over 2 days using Resend.com and Trigger.dev | [Supabase](https://trigger.dev/docs/integrations/apis/supabase)[Resend](https://trigger.dev/docs/integrations/apis/resend) | Trigger.dev                             | ✅     |
+| [Generate presentation titles using OpenAI](https://github.com/triggerdotdev/examples/tree/main/express-vanilla) | Generating presentation titles using OpenAI background jobs with Node.js, Express and Trigger.dev                                           | [OpenAI](https://trigger.dev/docs/integrations/apis/openai)                                                                | [lirantal](https://github.com/lirantal) | ✅     |
+| [Send a basic email with Resend](https://github.com/triggerdotdev/examples/tree/main/resend)                     | Send a basic email from a form with Resend                                                                                                  | [Resend](https://trigger.dev/docs/integrations/apis/resend)                                                                | Trigger.dev                             | ✅     |
 
 ## Getting Started
 
