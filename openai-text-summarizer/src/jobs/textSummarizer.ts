@@ -10,7 +10,7 @@ const openai = new OpenAI({
 });
 
 const slack = new Slack({
-  id: "slack-2",
+  id: "slack",
 });
 
 // use Open AI to summarize text from the form
