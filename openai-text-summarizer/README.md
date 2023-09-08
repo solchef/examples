@@ -1,4 +1,4 @@
-# Text Summarizer example Job
+# OpenAI Text Summarizer example project
 
 This folder contains an example Job using [Trigger.dev](https://trigger.dev), [OpenAI](https://openai.com) and [Slack](https://slack.com). You can use this Job as a starting point for creating your own Jobs.
 
