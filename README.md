@@ -8,7 +8,9 @@ Trigger.dev is a framework for creating long-running Jobs directly in your Next.
 
 ## Purpose of this Repository
 
-The @trigger.dev/examples repository serves as exploring the capabilities of Trigger.dev through practical examples. Each project in this collection demonstrates how to leverage Trigger.dev's features.
+The @trigger.dev/examples repository demonstrates the capabilities and features of Trigger.dev through practical project examples you can fork and use.
+
+For many more Job examples which are code only, check out our [Jobs Showcase repo](https://github.com/triggerdotdev/jobs-showcase).
 
 ## Projects in this Repository
 
