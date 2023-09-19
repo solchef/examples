@@ -3,7 +3,7 @@ import SendEmailForm from "./components/SendEmailForm";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center pt-20 sm:px-8 px-4">
+    <main className="flex min-h-screen flex-col items-center pt-20 sm:px-8 px- bg-gradient-to-b from-slate-700 to-slate-950">
       <div className="flex gap-x-4 mb-2">
         <TriggerDotDevLightIcon className="w-8 h-8" />
         <p>+</p>
@@ -13,7 +13,7 @@ export default function Home() {
         className="font-bold text-xl mb-4 text-center sm:w-96 
       p-4"
       >
-        Test sending an email using Trigger.dev and Resend
+        Send an email built using React with Trigger.dev and Resend
       </h1>
 
       <SendEmailForm />

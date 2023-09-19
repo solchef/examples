@@ -5,6 +5,7 @@ import { client } from "@/trigger";
 export async function sendEmail(
   to: string,
   subject: string,
+  name: string,
   text: string,
   from: string
 ) {
@@ -14,6 +15,7 @@ export async function sendEmail(
       to,
       subject,
       text,
+      name,
       from,
     },
   });
