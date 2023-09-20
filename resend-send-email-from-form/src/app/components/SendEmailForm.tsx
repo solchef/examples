@@ -1,9 +1,10 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { sendEmail } from "../_actions";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { set } from "zod";
 
 const SendEmailForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -12,6 +13,8 @@ const SendEmailForm = () => {
 
   const router = useRouter();
   const handleRefresh = () => {
+    setIsSubmitted(false);
+    console.log(isSubmitted);
     router.refresh();
   };
 
@@ -83,15 +86,15 @@ const SendEmailForm = () => {
           ✉️ Send email
         </button>
       ) : (
-        <p>
-          ✅ Email sent! -{" "}
+        <div className="flex gap-2">
+          <p>✅ Email sent! - </p>
           <button
             onClick={handleRefresh}
             className="underline underline-offset-2 hover:text-slate-100 transition text-slate-300"
           >
             Send another
           </button>
-        </p>
+        </div>
       )}
     </form>
   );
