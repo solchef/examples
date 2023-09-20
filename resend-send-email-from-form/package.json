@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "email": "email dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-email/body": "0.0.3",
     "@react-email/button": "0.0.10",
     "@react-email/container": "0.0.8",
     "@react-email/head": "0.0.5",

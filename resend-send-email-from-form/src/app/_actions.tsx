@@ -9,7 +9,7 @@ export async function sendEmail(
   text: string,
   from: string
 ) {
-  await client.sendEvent({
+  return await client.sendEvent({
     name: "send.email",
     payload: {
       to,

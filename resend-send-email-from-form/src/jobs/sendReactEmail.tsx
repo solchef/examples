@@ -5,6 +5,7 @@ import { z } from "zod";
 import { Html } from "@react-email/html";
 import { Head } from "@react-email/head";
 import { Text } from "@react-email/text";
+import { Body } from "@react-email/body";
 import { Button } from "@react-email/button";
 import { Section } from "@react-email/section";
 import { Preview } from "@react-email/preview";
@@ -48,27 +49,28 @@ client.defineJob({
 });
 
 // Email styling
+
+const main = {
+  padding: "10px 0",
+  backgroundColor: "#222094",
+};
+
 const container = {
-  width: "480px",
   margin: "0 auto",
   padding: "20px 0 48px",
 };
 
-const title = {
-  fontSize: "24px",
-  lineHeight: 1.25,
-};
-
 const section = {
   padding: "24px",
-  border: "solid 1px #dedede",
+  border: "solid 2px #dedede",
+  backgroundColor: "#fff",
   borderRadius: "5px",
   textAlign: "center" as const,
 };
 
 const text = {
-  margin: "0 0 10px 0",
   textAlign: "left" as const,
+  fontSize: "16px",
 };
 
 const button = {
@@ -86,15 +88,22 @@ function BasicEmail({ name, text }: { name: string; text: string }) {
     <Html>
       <Head />
       <Preview>Welcome to Acme Inc!</Preview>
-      <Container style={container}>
-        <Section style={section}>
-          <Text>Hey {name}!</Text>
-          <Text>{text}</Text>
-          <Button style={button} pY={4} pX={4} href="https://acmecompany.inc/">
-            Get started
-          </Button>
-        </Section>
-      </Container>
+      <Body style={main}>
+        <Container style={container}>
+          <Section style={section}>
+            <Text>Hey {name}!</Text>
+            <Text>{text}</Text>
+            <Button
+              style={button}
+              pY={4}
+              pX={4}
+              href="https://acmecompany.inc/"
+            >
+              Get started
+            </Button>
+          </Section>
+        </Container>
+      </Body>
     </Html>
   );
 }
