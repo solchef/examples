@@ -1,4 +1,7 @@
-import { ResendIcon, TriggerDotDevLightIcon } from "@trigger.dev/companyicons";
+import {
+  ResendLightIcon,
+  TriggerDotDevLightIcon,
+} from "@trigger.dev/companyicons";
 import SendEmailForm from "./components/SendEmailForm";
 
 export default function Home() {
@@ -7,7 +10,7 @@ export default function Home() {
       <div className="flex gap-x-4 mb-2">
         <TriggerDotDevLightIcon className="w-8 h-8" />
         <p>+</p>
-        <ResendIcon className="w-8 h-8" />
+        <ResendLightIcon className="w-8 h-8" />
       </div>
       <h1
         className="font-bold text-xl mb-4 text-center sm:w-96 
