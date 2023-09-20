@@ -5,7 +5,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Resend example project",
-  description: "A Next.js example project for using Resend with Trigger.dev",
+  description:
+    "A Next.js example project for sending an email with Resend and Trigger.dev",
 };
 
 export default function RootLayout({

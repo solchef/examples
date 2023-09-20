@@ -1,6 +1,6 @@
 # OpenAI Text Summarizer example project
 
-This folder contains an example Job using [Trigger.dev](https://trigger.dev), [OpenAI](https://openai.com) and [Slack](https://slack.com). You can use this Job as a starting point for creating your own Jobs.
+This folder contains an example project using [Trigger.dev](https://trigger.dev), [OpenAI](https://openai.com) and [Slack](https://slack.com). You can use this project as a starting point for your own Jobs.
 
 The Job is located in `src/jobs/textSummarizer.ts`.
 

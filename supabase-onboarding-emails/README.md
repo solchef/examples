@@ -1,6 +1,6 @@
-# Supabase 🤝 Trigger.dev - User management starter example
+# Supabase 🤝 Trigger.dev - User management starter example project
 
-This example is adapted from the [Supabase Next.js Auth & User Management Starter](https://github.com/supabase/supabase/tree/cae0b20cce0ca270a724fcffce83b4a642135323/examples/user-management/nextjs-user-management) and adds additional functionality using [Trigger.dev](https://trigger.dev).
+This project is adapted from the [Supabase Next.js Auth & User Management Starter](https://github.com/supabase/supabase/tree/cae0b20cce0ca270a724fcffce83b4a642135323/examples/user-management/nextjs-user-management) and adds additional functionality using [Trigger.dev](https://trigger.dev).
 
 ### Example Job: When a user signs up and confirms their email address, they will receive 3 "onboarding" emails over 2 days using [Resend.com](https://resend.com) and [Trigger.dev](https://trigger.dev)
 
