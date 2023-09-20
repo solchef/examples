@@ -36,7 +36,7 @@ export function Summary({ eventId }: { eventId: string }) {
                   : "progress"
               }
               name={task.displayKey ?? task.name ?? ""}
-              icon={task.icon}
+              icon={task.icon ?? undefined}
             />
           ))}
         </>

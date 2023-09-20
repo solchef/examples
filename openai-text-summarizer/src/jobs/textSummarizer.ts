@@ -5,12 +5,12 @@ import { Slack } from "@trigger.dev/slack";
 import { z } from "zod";
 
 const openai = new OpenAI({
-  id: "openai",
+  id: "openai-new",
   apiKey: process.env.OPENAI_API_KEY!,
 });
 
 const slack = new Slack({
-  id: "slack",
+  id: "slack-new",
 });
 
 // use Open AI to summarize text from the form
@@ -55,7 +55,7 @@ client.defineJob({
     await io.slack.postMessage("Posting to Slack", {
       // replace this with your own channel ID
       channel: "C05HNRBV22H",
-      text: summary,
+      text: summary ?? undefined,
     });
 
     return {
