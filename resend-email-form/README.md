@@ -1,4 +1,4 @@
-# Send a React email using Trigger.dev and Resend
+# Send a React email from a form using Trigger.dev and Resend
 
 This Next.js project sends an email which is built using React and Typescript, and sent using Trigger.dev and Resend. The email is triggered by completing a form.
 
