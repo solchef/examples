@@ -3,8 +3,6 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { sendEmail } from "../_actions";
-import Link from "next/link";
-import { set } from "zod";
 
 const SendEmailForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);

@@ -19,8 +19,8 @@ const resend = new Resend({
 
 // This job sends a basic email built using React and Typescript
 client.defineJob({
-  id: "resend-send-react-email",
-  name: "Resend: send react email",
+  id: "resend-email-form",
+  name: "Resend: send email on form submit",
   version: "1.0.0",
   trigger: eventTrigger({
     name: "send.email",
