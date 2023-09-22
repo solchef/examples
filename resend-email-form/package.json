@@ -36,7 +36,7 @@
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6",
     "webapp": "^0.0.2",
-    "zod": "^3.21.4"
+    "zod": "3.21.4"
   },
   "trigger.dev": {
     "endpointId": "my-app"
