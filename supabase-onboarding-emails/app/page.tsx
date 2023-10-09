@@ -8,13 +8,13 @@ import AuthForm from "./auth-form";
 export default function Home() {
   return (
     <div className="relative flex flex-col w-full h-full items-center sm:pt-24 pt-16 px-4">
-      <div className="max-w-xl flex flex-col items-center justify-center gap-4">
-        <div className="flex items-center justify-center gap-2">
-          <SupabaseIcon className="sm:w-12 sm:h-12 h-8 w-8" />
+      <div className="max-w-xl flex flex-col items-center justify-center gap-4 mb-4">
+        <div className="flex items-center justify-center gap-3">
+          <SupabaseIcon className="sm:w-10 sm:h-10 h-8 w-8" />
           <p>+</p>
-          <TriggerDotDevLightIcon className="sm:w-12 sm:h-12 h-8 w-8" />
+          <TriggerDotDevLightIcon className="sm:w-10 sm:h-10 h-8 w-8" />
           <p>+</p>
-          <ResendLightIcon className="sm:w-12 sm:h-12 h-8 w-8" />
+          <ResendLightIcon className="sm:w-10 sm:h-10 h-8 w-8" />
         </div>
 
         <div className="flex flex-col items-center w-full gap-4">
