@@ -87,7 +87,7 @@ export default function Avatar({
           style={{ height: size, width: size }}
         />
       )}
-      <div style={{ width: size }}>
+      <div>
         <label className="button primary block" htmlFor="single">
           {uploading ? "Uploading ..." : "Upload"}
         </label>

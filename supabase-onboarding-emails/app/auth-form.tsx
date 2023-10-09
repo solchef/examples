@@ -7,14 +7,16 @@ import { Database } from "@/supabase-types";
 export default function AuthForm() {
   const supabase = createClientComponentClient<Database>();
   return (
-    <Auth
-      supabaseClient={supabase}
-      view="magic_link"
-      appearance={{ theme: ThemeSupa }}
-      theme="dark"
-      showLinks={false}
-      providers={[]}
-      redirectTo="http://localhost:3000/auth/callback"
-    />
+    <div className="w-full">
+      <Auth
+        supabaseClient={supabase}
+        view="magic_link"
+        appearance={{ theme: ThemeSupa }}
+        theme="dark"
+        showLinks={false}
+        providers={[]}
+        redirectTo="http://localhost:3000/auth/callback"
+      />
+    </div>
   );
 }

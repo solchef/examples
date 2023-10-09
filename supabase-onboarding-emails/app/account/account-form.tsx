@@ -78,66 +78,77 @@ export default function AccountForm({ session }: { session: Session | null }) {
   }
 
   return (
-    <div className="form-widget">
-      <Avatar
-        uid={user!.id}
-        url={avatar_url}
-        size={150}
-        onUpload={(url) => {
-          setAvatarUrl(url);
-          updateProfile({ fullname, username, website, avatar_url: url });
-        }}
-      />
-      <div>
-        <label htmlFor="email">Email</label>
-        <input id="email" type="text" value={session?.user.email} disabled />
-      </div>
-      <div>
-        <label htmlFor="fullName">Full Name</label>
-        <input
-          id="fullName"
-          type="text"
-          value={fullname || ""}
-          onChange={(e) => setFullname(e.target.value)}
+    <div className="w-full items-center sm:p-12 flex-col flex">
+      <div className="form-widget sm:w-auto w-full min-w-2xl gap-4 flex flex-col items-center p-8 rounded-lg bg-gray-800">
+        <Avatar
+          uid={user!.id}
+          url={avatar_url}
+          size={150}
+          onUpload={(url) => {
+            setAvatarUrl(url);
+            updateProfile({ fullname, username, website, avatar_url: url });
+          }}
         />
-      </div>
-      <div>
-        <label htmlFor="username">Username</label>
-        <input
-          id="username"
-          type="text"
-          value={username || ""}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-      </div>
-      <div>
-        <label htmlFor="website">Website</label>
-        <input
-          id="website"
-          type="url"
-          value={website || ""}
-          onChange={(e) => setWebsite(e.target.value)}
-        />
-      </div>
+        <div>
+          <label htmlFor="email">Email</label>
+          <input
+            id="email"
+            type="text"
+            value={session?.user.email}
+            disabled
+            className="bg-black sm:w-80"
+          />
+        </div>
+        <div>
+          <label htmlFor="fullName">Full Name</label>
+          <input
+            id="fullName"
+            type="text"
+            value={fullname || ""}
+            className="bg-black sm:w-80"
+            onChange={(e) => setFullname(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="username">Username</label>
+          <input
+            id="username"
+            type="text"
+            value={username || ""}
+            className="bg-black sm:w-80"
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="website">Website</label>
+          <input
+            id="website"
+            type="url"
+            value={website || ""}
+            onChange={(e) => setWebsite(e.target.value)}
+            className="bg-black sm:w-80"
+          />
+        </div>
 
-      <div>
-        <button
-          className="button primary block"
-          onClick={() =>
-            updateProfile({ fullname, username, website, avatar_url })
-          }
-          disabled={loading}
-        >
-          {loading ? "Loading ..." : "Update"}
-        </button>
-      </div>
-
-      <div>
-        <form action="/auth/signout" method="post">
-          <button className="button block" type="submit">
-            Sign out
+        <div>
+          <button
+            className="button primary block"
+            onClick={() =>
+              updateProfile({ fullname, username, website, avatar_url })
+            }
+            disabled={loading}
+          >
+            {loading ? "Loading ..." : "Update"}
           </button>
-        </form>
+        </div>
+
+        <div>
+          <form action="/auth/signout" method="post">
+            <button className="button block" type="submit">
+              Sign out
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
