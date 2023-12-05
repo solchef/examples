@@ -1,0 +1,23 @@
+{
+  "name": "trigger-cloudflare-workers",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "dev:trigger": "trigger-cli dev --client-id worker-client -p 8787 -H localhost"
+  },
+  "devDependencies": {
+    "@trigger.dev/cli": "0.0.0-cross-runtime-20231205160729",
+    "@cloudflare/workers-types": "^4.20231121.0",
+    "typescript": "^5.0.4",
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "@trigger.dev/sdk": "0.0.0-cross-runtime-20231205160729",
+    "@trigger.dev/hono": "0.0.0-cross-runtime-20231205160729",
+    "@trigger.dev/openai": "0.0.0-cross-runtime-20231205160729",
+    "hono": "^3.10.3"
+  }
+}
